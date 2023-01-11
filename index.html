@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpu
+
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+  <body class="vh-100 d-flex flex-column">
+	<nav class="navbar">
+		<div class="container">
+			<a class="navbar-brand text-white fw-bold" href="#">Simple Task Board</a>
+		</div>
+	</nav>
+  	  
+    <main>
+    <form class="tasks">
+      <input type="text" placeholder="Title" />
+      <textarea placeholder="Description" style="resize: none;" rows="6"></textarea>
+      <button class="create-button">Create</button>
+    </form>
+
+        <div class="task-column">
+        <h2> To Do </h2>
+        <ul class="Cardcolumn todo"></ul>
+      </div>
+
+      <button class="arrow" id="move-to-in-progress">-></button>
+      
+      <div class="task-column">
+        <h2> In progress </h2>
+        <ul class="Cardcolumn inprogress"></ul>
+      </div>
+
+      <button class="arrow" id="move-to-done">-></button>
+
+      <div class="task-column">
+        <h2> Done </h2>
+        <ul class="Cardcolumn done"></ul>
+      </div>
+      
+    </form>
+  </main>
